@@ -1,0 +1,37 @@
+#
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+
+# If you want to use GNOME config tools...
+#
+#if test -x /usr/lib/openbox/gnome-settings-daemon >/dev/null; then
+#  /usr/lib/openbox/gnome-settings-daemon &
+#elif which gnome-settings-daemon >/dev/null 2>&1; then
+#  gnome-settings-daemon &
+#fi
+
+# If you want to use XFCE config tools...
+#xfce-mcs-manager &
+nm-applet &
+tint2 &
+nitrogen --restore &
+xcompmgr &
+volwheel & 
+#conky -c ~/.conky/.conky/.conkyrc &
+setxkbmap latam &  # configuracion de teclado en xorg, para ponerlo en español
+/usr/bin/nm-applet & #para activar la red en el icono de red
+#xfce4-power-manager &    #programa para ver la carga de la bateria
+mate-power-manager &	#programa alternativo para ver la carga de la bateria
+
+#Programas que se ejecutan despues de arrancar openbox
+(sleep 2 && plank) &
+#para que arranque el gestor de ventanas dinamico, para tener ventanas abiertas en mosaico
+dwmstatus &
+megasync &
+
+
+#REVISAR ESTO
+
+/usr/bin/nm-applet --sm-disable & 
