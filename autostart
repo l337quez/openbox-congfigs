@@ -14,11 +14,11 @@
 
 # If you want to use XFCE config tools...
 #xfce-mcs-manager &
-nm-applet &
+
 tint2 &
 nitrogen --restore &
 xcompmgr &
-volwheel & 
+volumeicon & 
 #conky -c ~/.conky/.conky/.conkyrc &
 setxkbmap latam &  # configuracion de teclado en xorg, para ponerlo en español
 /usr/bin/nm-applet & #para activar la red en el icono de red
@@ -31,6 +31,8 @@ mate-power-manager &	#programa alternativo para ver la carga de la bateria
 dwmstatus &
 megasync &
 
+#Ranger
+xrdb ~/.Xresources &
 
 #REVISAR ESTO
 

@@ -339,10 +339,10 @@
         <command>xkill</command>
       </action>
     </keybind>
-    <!-- Abrir gestor de ventanas thunar -->
+    <!-- Abrir gestor de ventanas pcmanfm -->
     <keybind key="W-e">
       <action name="Execute">
-        <command>thunar</command>
+        <command>pcmanfm</command>
       </action>
     </keybind>
     <!-- Synapse -->
