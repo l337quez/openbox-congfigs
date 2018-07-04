@@ -146,6 +146,14 @@
       </startupnotify>
     </action>
   </item>
+     <item label="Putty">
+    <action name="Execute">
+      <command>putty</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
    <item label="Riot">
     <action name="Execute">
       <command>riot-desktop</command>

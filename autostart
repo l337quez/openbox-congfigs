@@ -19,6 +19,7 @@ tint2 &
 nitrogen --restore &
 xcompmgr &
 volumeicon & 
+xpad & #notas 
 #conky -c ~/.conky/.conky/.conkyrc &
 setxkbmap latam &  # configuracion de teclado en xorg, para ponerlo en español
 /usr/bin/nm-applet & #para activar la red en el icono de red
